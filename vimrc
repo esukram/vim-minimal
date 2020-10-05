@@ -31,9 +31,14 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" get current vim directory
+let vimdir=fnamemodify(expand("$MYVIMRC"), ":p:h")
+let tempdir=vimdir . '/tmp'
+
 " central backup dir
-set backupdir=~/.vim/tmp
-set directory=~/.vim/tmp
+let &backupdir = tempdir
+" swap files dir
+let &directory = tempdir
 
 " set many undos
 set undolevels=1000
@@ -55,5 +60,5 @@ set viminfo+=h
 " |+ file marks 0-9,A-Z 0=NOT stored
 set viminfo+=f0
 " |+ viminfo file path
-set viminfo+=n~/.vim/tmp/viminfo
+let &viminfo .= ',n' . tempdir .  '/viminfo'
 
