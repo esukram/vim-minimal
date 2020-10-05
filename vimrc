@@ -46,6 +46,10 @@ set undolevels=1000
 " get more history
 set history=1000
 
+set wildchar=<Tab>
+set wildmenu
+set wildmode=longest,list,full
+
 " viminfo settings
 "           |= save/restore buffer list
 "           | |+ lines saved each register (old name for <, vi6.2)
