@@ -1,3 +1,6 @@
+" load pathogen
+filetype off
+execute pathogen#infect()
 
 " mitigate Windows/cygwin
 scriptencoding utf-8
