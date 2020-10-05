@@ -69,3 +69,6 @@ set viminfo+=f0
 " |+ viminfo file path
 let &viminfo .= ',n' . tempdir .  '/viminfo'
 
+" select eye-friendly colors
+colorscheme zenburn
+
