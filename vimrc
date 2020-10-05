@@ -113,7 +113,6 @@ let &viminfo .= ',n' . tempdir .  '/viminfo'
 " select eye-friendly colors
 colorscheme zenburn
 
-
 """"""""""""""""
 " key bindings "
 """"""""""""""""
