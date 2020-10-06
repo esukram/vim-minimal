@@ -7,3 +7,9 @@
 [submodule "bundle/l9"]
 	path = bundle/l9
 	url = https://github.com/slack/vim-l9.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/airline-themes"]
+	path = bundle/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git

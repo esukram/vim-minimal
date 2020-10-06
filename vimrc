@@ -82,7 +82,7 @@ set splitbelow
 set visualbell
 
 " set spaces as '.'
-set list
+set list 
 set listchars=tab:\|·,trail:·
 
 " smaller line high, less spaces
@@ -112,6 +112,10 @@ let &viminfo .= ',n' . tempdir .  '/viminfo'
 
 " select eye-friendly colors
 colorscheme zenburn
+
+" Airline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""
 " key bindings "
