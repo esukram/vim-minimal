@@ -5,6 +5,9 @@ execute pathogen#infect()
 " sets vim not vi compatible
 set nocompatible
 
+" select eye-friendly colors
+colorscheme zenburn
+
 " mitigate Windows/cygwin
 scriptencoding utf-8
 set encoding=utf-8
@@ -82,8 +85,13 @@ set splitbelow
 set visualbell
 
 " set spaces as '.'
-set list 
+set list
 set listchars=tab:\|·,trail:·
+
+"Highlight spaces at the end of lines
+let c_space_errors=1
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
 
 " smaller line high, less spaces
 set lsp=0
@@ -109,9 +117,6 @@ set viminfo+=h
 set viminfo+=f0
 " |+ viminfo file path
 let &viminfo .= ',n' . tempdir .  '/viminfo'
-
-" select eye-friendly colors
-colorscheme zenburn
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1
