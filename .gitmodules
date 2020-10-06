@@ -1,3 +1,9 @@
 [submodule "bundle/zenburn"]
 	path = bundle/zenburn
 	url = https://github.com/jnurmine/Zenburn.git
+[submodule "bundle/autocomplpop"]
+	path = bundle/autocomplpop
+	url = https://github.com/othree/vim-autocomplpop.git
+[submodule "bundle/l9"]
+	path = bundle/l9
+	url = https://github.com/slack/vim-l9.git
