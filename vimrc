@@ -96,6 +96,9 @@ match WhitespaceEOL /\s\+$/
 " smaller line high, less spaces
 set lsp=0
 
+" line length indicator
+set colorcolumn=80,120
+
 " minimal number of screen lines to keep above and below the cursor
 set scrolloff=5
 
